@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+<body class="container mx-auto font-[Montserrat]">
+    <div class="bg-[#FEF7F2] 2xl:w-full w-3xl container mx-auto">
+        <!-- navbar starts here  -->
+        <nav
+            class="flex 2xl:justify-between justify-center  text-xl font-[Montserrat] 2xl:mx-20 py-4 gap-2 items-baseline">
+            <div>
+                <img src="../assets/Hero-Section/logo.png" alt="Logo" class="w-[93px] h-[29px]">
+            </div>
+            <div class="flex gap-10 font-semibold">
+                <div><a href="index.html" target="_blank">Home</a></div>
+                <div><a href="">Service</a></div>
+                <div><a href="">Agents</a></div>
+                <div><a href="contact.html" target="_blank">Contact</a></div>
+            </div>
+            <div class="flex gap-5 items-center">
+                <div><i class="fa-solid fa-magnifying-glass mx-4"></i></div>
+                <div><i class="fa-regular fa-user mx-4"></i></div>
+                <button
+                    class="bg-black text-white 2xl:px-2 2xl:py-2 2xl:w-28 w-24 py-2 px-2 rounded cursor-pointer ">Sign
+                    up</button>
+            </div>
+        </nav>
+        <!-- Contact Container Starts here  -->
+         <div class="p-24">
+            <div class="flex items-center gap-5">
+                <div class="border-2 w-18 h-0"></div>
+                <h1 class="text-3xl 2xl:text-5xl  font-semibold ">Contact us</h1>
+            </div>
+            <div class="flex 2xl:flex-row justify-between pt-20 text-xl flex-col gap-10 2xl:gap-0">
+                <div class="flex gap-8 ">
+                    <div class="bg-[#ECD5D5] size-18 flex justify-center items-center rounded-full">
+                        <img src="../assets/Contact/Contact_Us/location.png" alt="" class="w-7">
+                    </div>
+                    <div>
+                        <h1 class="font-semibold text-2xl">Address</h1>
+                        <p>Jaipur Rajasthan INDIA</p>
+                        <p>Pin 342087</p>
+                    </div>
+                </div>
+                <div class="flex gap-8">
+                    <div class="bg-[#ECD5D5] size-18 flex justify-center items-center rounded-full">
+                        <img src="../assets/Contact/Contact_Us/phone.png" alt="" class="w-7">
+                    </div>
+                    <div>
+                        <h1 class="font-semibold text-2xl">Call us</h1>
+                        <p>+91 98765 43210</p>
+                    </div>
+                </div>
+                <div class="flex gap-8">
+                    <div class="bg-[#ECD5D5] size-18 flex justify-center items-center rounded-full">
+                        <img src="../assets/Contact/Contact_Us/email.png" alt="" class="w-7">
+                    </div>
+                    <div>
+                        <h1 class="font-semibold text-2xl">Email us</h1>
+                        <p>info@test.com</p>
+                    </div>
+                </div>
+            </div>
+         </div>
+         <!-- Contact Containers End Here  -->
+    </div>
+    <!-- Get in touch form starts here  -->
+    <div class="bg-white 2xl:w-full w-3xl container mx-auto">
+       <div class="2xl:mx-60 2xl:m-20 mt-10">
+        <div>
+            <h1 class="text-5xl 2xl:text-5xl  font-bold text-[#2B1B12] text-center  px-10 ">Get in touch with us.</h1>
+            <h2 class="text-5xl 2xl:text-5xl  font-bold text-[#2B1B12] text-center py-4 px-10">We're here to assist you.</h2>
+        </div>
+        <div class="p-20 bg-[#FEF7F2] 2xl:m-10 rounded-2xl m-16">
+            <form id="myForm" class="flex flex-wrap -mx-4 text-[#808080]">
+                <div class="w-full 2xl:w-1/2 px-4 mb-10">
+                    <label class="block text-sm font-medium pb-5">Full Name</label>
+                    <input type="text" id="fullName" class="input-field mt-1 block w-full border-b-2 border-gray-300 bg-transparent focus:border-black focus:outline-none" >
+                    <span class="text-red-500 hidden" id="fullNameError">*Full Name is required</span>
+                </div>
+                <div class="w-full 2xl:w-1/2 px-4 mb-10">
+                    <label class="block text-sm font-medium pb-5">Email Address</label>
+                    <input type="email" id="email" class="input-field mt-1 block w-full border-b-2 border-gray-300 bg-transparent focus:border-black focus:outline-none" >
+                    <span class="text-red-500 hidden" id="emailError">*Email is required</span>
+                </div>
+                <div class="w-full 2xl:w-1/2 px-4 mb-10">
+                    <label class="block text-sm font-medium pb-5">Phone Number</label>
+                    <input type="tel" id="phone" class="input-field mt-1 block w-full border-b-2 border-gray-300 bg-transparent focus:border-black focus:outline-none" placeholder="Enter your phone number" pattern="^[0-9]{10}$" maxlength="10" >
+                    <span class="text-red-500 hidden" id="phoneError" >*Phone Number is required</span>
+                </div>
+                <div class="w-full 2xl:w-1/2 px-4 mb-10">
+                    <label class="block text-sm font-medium pb-5">Date of Birth</label>
+                    <input type="date" id="dob" class="input-field mt-1 block w-full border-b-2 border-gray-300 bg-transparent focus:border-black focus:outline-none" >
+                    <span class="text-red-500 hidden" id="dobError">*Date of Birth is required</span>
+                </div>
+                <div class="w-full 2xl:w-1/2 px-4 mb-10">
+                    <label class="block text-sm font-medium pb-5">Gender</label>
+                    <select id="gender" class="input-field mt-1 block w-full border-b-2 border-gray-300 bg-transparent focus:border-black focus:outline-none" >
+                        <option value="" disabled selected>Select your gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                    <span class="text-red-500 hidden" id="genderError">*Gender is required</span>
+                </div>
+                <div class="w-full 2xl:w-1/2 px-4 mb-10">
+                    <label class="block text-sm font-medium pb-5">City</label>
+                    <input type="text" id="city" class="input-field mt-1 block w-full border-b-2 border-gray-300 bg-transparent focus:border-black focus:outline-none" >
+                    <span class="text-red-500 hidden" id="cityError">*City is required</span>
+                </div>
+                <div class="w-full 2xl:w-1/2 px-4 mb-10">
+                    <label class="block text-sm font-medium pb-5">State</label>
+                    <input type="text" id="state" class="input-field mt-1 block w-full border-b-2 border-gray-300 bg-transparent focus:border-black focus:outline-none" >
+                    <span class="text-red-500 hidden" id="stateError">*State is required</span>
+                </div>
+                <div class="w-full 2xl:w-1/2 px-4 mb-10">
+                    <label class="block text-sm font-medium pb-5">Country</label>
+                    <input type="text" id="country" class="input-field mt-1 block w-full border-b-2 border-gray-300 bg-transparent focus:border-black focus:outline-none" >
+                    <span class="text-red-500 hidden" id="countryError">*Country is required</span>
+                </div>
+                <div class="w-full 2xl:w-1/2 px-4 mb-10">
+                    <label class="block text-sm font-medium pb-5">Address</label>
+                    <input type="text" id="address" class="input-field mt-1 block w-full border-b-2 border-gray-300 bg-transparent focus:border-black focus:outline-none" >
+                    <span class="text-red-500 hidden" id="addressError">*Address is required</span>
+                </div>
+                <div class="w-full 2xl:w-1/2 px-4 mb-10">
+                    <label class="block text-sm font-medium pb-5">Message</label>
+                    <textarea id="message" rows="1" class="input-field mt-1 block w-full border-b-2 border-gray-300 bg-transparent focus:border-black focus:outline-none" ></textarea>
+                    <span class="text-red-500 hidden" id="messageError">*Message is required</span>
+                </div>
+                <div class="w-full 2xl:w-1/2 px-4 mb-10">
+                    <label class="block text-sm font-medium pb-5">Request a counselling session</label>
+                    <div class="mt-2 flex items-center gap-4">
+                      <label class="flex items-center">
+                        <input type="radio" name="counselling" value="yes" class="h-4 w-4">
+                        <span class="ml-2 text-sm text-gray-700">Yes</span>
+                      </label>
+                      <label class="flex items-center">
+                        <input type="radio" name="counselling" value="no" class="h-4 w-4">
+                        <span class="ml-2 text-sm ">No</span>
+                      </label>
+                    </div>
+                </div>
+                <div class="w-full 2xl:w-1/2 px-4 mb-6">
+                    <label class="block text-sm font-medium pb-5">Upload your CV/Resume</label>
+                    <div class="flex justify-center items-center gap-2">
+                        <img src="../assets/Contact/cloud.png" alt="Upload Icon" class="size-5">
+                        <input type="file" id="resume" class="input-field mt-1 px-5 block w-full border-b-2 border-gray-300 bg-transparent focus:border-black focus:outline-none" >
+                    </div>
+                    <span class="text-red-500 hidden" id="resumeError">*Resume is required</span>
+                </div>
+                <div class="w-full px-4 mb-6 flex items-center">
+                    <input type="checkbox" id="terms" class="h-4 w-4 text-black focus:ring-black" >
+                    <label for="terms" class="ml-2 text-sm">Agree to terms and conditions</label>
+                    <span class="text-red-500 hidden ml-2" id="termsError">You must agree to the terms</span>
+                </div>
+                <div class="w-full px-4">
+                    <button type="submit" class="bg-[#2B1B12] text-white 2xl:px-2 2xl:py-3 2xl:w-84 w-64 py-2 px-2 rounded cursor-pointer">Submit Information</button>
+                </div>
+            </form>
+        </div>
+       </div>
+       <img src="../assets/Contact/map.png" alt="" class="2xl:w-6xl w-2xl mx-auto pb-10">
+    </div>
+    <!-- Get in touch forms ends here  -->
+    <div class="bg-white 2xl:w-full w-3xl container mx-auto ">
+        <h1 class="text-2xl 2xl:text-5xl  font-bold text-[#2B1B12] text-center py-14 px-10 2xl:mx-96">Do You Have Any Questions? Get Help From Us</h1>
+        <div class="w-xl mx-auto">
+            <div class="flex justify-between">
+                <div class="flex items-center text-xl">
+                    <img src="../assets/Question/tick.png" alt="" class="size-6 mx-2">
+                    <p>Chat live with our support team</p>
+                </div>
+
+                <div class="flex items-center text-xl">
+                    <img src="../assets/Question/tick.png" alt="" class="size-6 mx-2">
+                    <p>Browser our FAQ</p>
+                </div>
+            </div>
+        </div>
+        <div class="w-2xl flex justify-evenly py-10 2xl:mx-auto ml-20">
+            <div class="flex items-baseline">
+                <i class="fa-solid fa-envelope -mx-8 z-10"></i>
+                <input type="text" placeholder="Enter your email address..." class="bg-[#DDC7BB] h-12 2xl:w-lg w-xl px-10 rounded ">
+            </div>
+            <button class="bg-black text-white 2xl:px-2   2xl:w-28 w-28 py-1  rounded cursor-pointer ">Submit</button>
+        </div>    
+   </div>
+   
+   <div class="bg-[#FEF7F2] 2xl:w-full w-3xl container mx-auto flex flex-col items-center pb-20">
+        <div>
+            <h1 class="text-6xl 2xl:text-5xl  font-bold text-[#2B1B12] text-center pt-10">Do you have any question</h1>
+            <p class="2xl:text-xl text-3xl my-7  text-center 2xl:mx-92 ">Our support team ready to help you, please contact with them</p>
+        </div>
+        <div class="flex flex-col gap-10">
+            <div class="flex">
+                <img src="../assets/Contact/Question/plus.png" alt="" class="size-5 mx-5">
+                <p >How to contact with riders emergency ?</p>
+            </div>
+            <div class="flex">
+                <img src="../assets/Contact/Question/plus.png" alt="" class="size-5 mx-5">
+                <p>App installation failed, how to update system information?</p>
+            </div>
+            <div>
+                <div class="flex">
+                    <img src="../assets/Contact/Question/minus.png" alt="" class="size-5 mx-5">
+                    <p>Website reponse taking time, how to improve?</p>
+                </div>
+                <div class="mx-15 font-light">
+                    <p>Get your blood tests delivered at the home collect a sample from management news.</p>
+                    <p>Get your blood tests delivered at the home collect a sample from management news.</p>
+                    <p>Get your blood tests delivered at the home collect a sample from management news.</p>
+                    <p>Get your blood tests delivered at the home.</p>
+                </div>
+            </div>
+            <div class="flex">
+                <img src="../assets/Contact/Question/plus.png" alt="" class="size-5 mx-5">
+                <p>New update fixed all bug and issues</p>
+            </div>            
+        </div>
+   </div>
+   <div class="bg-[#DDC7BB] 2xl:w-full w-3xl container mx-auto p-20">
+    <div class="flex 2xl:justify-between 2xl:pr-40 text-xl flex-col 2xl:flex-row">
+        <div>
+            <img src="../assets/Hero-Section/logo.png" alt="" class="w-[93px] h-[29px]">
+            <p class="w-60 pt-6">Bringing you closer to your dream home, one click at a time.</p>
+        </div>
+        <div class="flex 2xl:w-3xl 2xl:justify-between  font-semibold w-full justify-between pt-10 2xl:pt-0">
+            <div class="flex flex-col gap-5">
+                <h1 class="font-bold">About</h1>
+                <p>Our Story</p>
+                <p>Careers</p>
+                <p>Our Team</p>
+                <p>Resources</p>
+            </div>
+
+            <div class="flex flex-col gap-5">
+                <h1 class="font-bold">Support</h1>
+                <p>FAQ</p>
+                <p>Contact Us</p>
+                <p>Help Center</p>
+                <p>Terms of Service</p>
+            </div>
+
+            <div class="flex flex-col gap-5 ">
+                <h1 class="font-bold">Find Us</h1>
+                <p>Events</p>
+                <p>Location</p>
+                <p>Newsletter</p>
+            </div>
+
+            <div class="flex flex-col gap-5 ">
+                <h1 class="font-bold">Our Social</h1>
+                <p><img src="../assets/Footer/instagram.png" alt="" class="inline size-5 mr-5">Instagram</p>
+                <p><img src="../assets/Footer/facebook.png" alt="" class="inline size-5 mr-5">Facebook</p>
+                <p><img src="../assets/Footer/twiter.png" alt="" class="inline size-5 mr-5">Twitter (x)</p>
+            </div>
+        </div>
+    </div>
+    <script src="contact.js"></script>
+</body>
+</html>
